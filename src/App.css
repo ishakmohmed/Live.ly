@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+}
+
+.main-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.each-container {
+  height: 100vh;
+}
+
+.left-section {
+  width: 30%;
+  overflow: scroll;
+}
+
+.middle-section {
+  width: 40%;
+  background: linear-gradient(to bottom, #1db954, #191414);
+  display: flex;
+  align-items: center;
+}
+
+.right-section {
+  width: 30%;
+  overflow: scroll;
+}
+
+.main-heading {
+  font-family: "Fredoka One", cursive;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.main-heading-left {
+  background-color: #1e3888;
+}
+
+.main-heading-right {
+  background-color: #b80c09;
+}
+
+.task-container-one {
+  background-color: #011638;
+  align-items: center;
+  padding: 10px;
+}
+
+.task-container-two {
+  background-color: #a20021;
+  align-items: center;
+  padding: 10px;
+}
+
+.task-name {
+  color: white;
+  font-size: 20px;
+  font-family: "Lobster", cursive;
+}
+
+.entire-form,
+.task-input {
+  background-color: #dce2bd;
+}
+
+.entire-form {
+  padding: 10px;
+}
+
+input[type="text"],
+input[type="text"]:focus,
+textarea {
+  background-color: #dce2bd;
+}
+
+input[type="text"]:focus {
+  box-shadow: none;
+}
+
+.greeting {
+  color: black;
+  background-color: #f1ffe7;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.advice {
+  color: white;
+  background-color: #054a29;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 20px;
+  width: 80%;
+  font-family: "Caveat", cursive;
+}
+
+.time-container {
+  color: white;
+  background-color: #d81e5b;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 20px;
+  width: 80%;
+}
