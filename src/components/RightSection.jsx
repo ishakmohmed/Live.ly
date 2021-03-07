@@ -23,7 +23,7 @@ function RightSection() {
   return (
     <div className="each-container right-section">
       <center>
-        <h1 className="main-heading main-heading-right">UK Tech News</h1>
+        <h1 className="main-heading main-heading-right">Hot News</h1>
         {news.map((eachNews) => (
           <CardInsideRightSection
             // imageUrl={eachNews.multimedia[0].url}
