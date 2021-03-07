@@ -32,11 +32,13 @@ export default function MediaCard({
   return (
     <Card className={classes.root}>
       <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image={imageUrl}
-          // title="Contemplative Reptile"
-        />
+        {imageUrl && (
+          <CardMedia
+            className={classes.media}
+            image={imageUrl}
+            // title="Contemplative Reptile"
+          />
+        )}
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             {title}

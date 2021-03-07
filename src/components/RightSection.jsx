@@ -9,11 +9,11 @@ function RightSection() {
   useEffect(() => {
     axios
       .get(
-        "https://newsapi.org/v2/everything?q=Apple&from=2021-03-06&sortBy=popularity&apiKey=2a05267e461349dab16670aa6ad054ad"
+        "https://api.nytimes.com/svc/topstories/v2/world.json?api-key=pbISmD7i8C4XOv0bDFqVxmXfm63mzq50"
       )
       .then((res) => {
-        console.log(res.data.articles);
-        setNews(res.data.articles);
+        console.log(res.data.results);
+        setNews(res.data.results);
       })
       .catch((error) => {
         console.log(error);
@@ -24,14 +24,14 @@ function RightSection() {
     <div className="each-container right-section">
       <center>
         <h1 className="main-heading main-heading-right">UK Tech News</h1>
-          {news.map((eachNews) => (
-            <CardInsideRightSection
-              imageUrl={eachNews.urlToImage}
-              title={eachNews.title}
-              newsDescription={eachNews.description}
-              fullNewsLink={eachNews.url}
-            />
-          ))}
+        {news.map((eachNews) => (
+          <CardInsideRightSection
+            // imageUrl={eachNews.multimedia[0].url}
+            title={eachNews.title}
+            newsDescription={eachNews.abstract}
+            fullNewsLink={eachNews.url}
+          />
+        ))}
       </center>
     </div>
   );
