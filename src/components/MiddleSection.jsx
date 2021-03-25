@@ -21,7 +21,7 @@ function MiddleSection(props) {
   return (
     <div className="middle-section">
       <center>
-        <h2 className="greeting">Hello, User!</h2>
+        <h2 className="greeting">Hey, User!</h2>
         <h3 className="advice">
           Today's randomly generated advice: "{advice}"
         </h3>
